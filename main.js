@@ -1,4 +1,4 @@
-export function throttle(fn, wait) {
+function throttle(fn, wait) {
     var timer = null;
     return function(...args){
         if (timer) return;
